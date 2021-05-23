@@ -3,10 +3,13 @@ import Bartender from './Bartender.jsx';
 import MovieCard from './MovieCard.jsx';
 
 const Usher = () => {
+  // Add movies array to state object
   const [movies, setMovies] = useState([]);
 
+  // Whenever Usher component mounts/updates
   useEffect(() => {
     let isMounted = true;
+    //
     fetch('/api')
       .then((data) => data.json())
       .then((updatedData) => {
@@ -31,9 +34,9 @@ const Usher = () => {
     movieCards.push(<MovieCard movie={movies[i]}></MovieCard>);
   }
   return (
-    <div>
+    <div className="usher">
       {movieCards}
-      <Bartender></Bartender>
+      {/* <Bartender></Bartender> */}
     </div>
   );
 };
