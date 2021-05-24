@@ -1,0 +1,35 @@
+* {
+  background-color: bisque;
+}
+.usher {
+  max-width: 85em;
+  margin: 0 auto;
+}
+
+.movie-card {
+  padding: 5px;
+  width: 30%;
+  max-width: 19em;
+  min-width: 19em;
+  min-height: 25em;
+  margin: 5px 5px 13px 10px;
+  float: left;
+  font-size: 0.8em;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movietitle {
+  font-weight: bold;
+}
+
+.movieposter {
+  padding: 10px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 25%; */
+  /* align-items: center; */
+  /* margin: 15px auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); */
+}
