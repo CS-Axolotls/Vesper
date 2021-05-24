@@ -1,78 +1,21 @@
 {
-  "28": {
-    "genre": "Action",
-    "drink": "Long Island Icetea"
-  },
-  "12": {
-    "genre": "Adventure",
-    "drink": "Rum Runner"
-  },
-  "16": {
-    "genre": "Animation",
-    "drink": "Purple Hooter"
-  },
-  "35": {
-    "genre": "Comedy",
-    "drink": "Classic Margarita"
-  },
-  "80": {
-    "genre": "Crime",
-    "drink": "Tom Collins"
-  },
-  "99": {
-    "genre": "Documentary",
-    "drink": "French 75"
-  },
-  "18": {
-    "genre": "Drama",
-    "drink": "Dirty Volka Martini"
-  },
-  "10751": {
-    "genre": "Family",
-    "drink": "Shirley Temple"
-  },
-  "14": {
-    "genre": "Fantasy",
-    "drink": "Blue Hawaiian"
-  },
-  "36": {
-    "genre": "History",
-    "drink": "Irish Coffee"
-  },
-  "27": {
-    "genre": "Horror",
-    "drink": "Bloody Mary"
-  },
-  "10402": {
-    "genre": "Music",
-    "drink": "Rum and Coke"
-  },
-  "9648": {
-    "genre": "Mystery",
-    "drink": "Dark and stormy"
-  },
-  "10749": {
-    "genre": "Romance",
-    "drink": "Cosmopolitian"
-  },
-  "878": {
-    "genre": "Science Fiction",
-    "drink": "Swamp Water"
-  },
-  "10770": {
-    "genre": "TV Movie",
-    "drink": "Washington Apple"
-  },
-  "53": {
-    "genre": "Thriller",
-    "drink": "Salty Dog"
-  },
-  "10752": {
-    "genre": "War",
-    "drink": "White Russian"
-  },
-  "37": {
-    "genre": "Western",
-    "drink": "Old Fashion"
-  },
+  "28": "long%20island%20iced%20tea",
+  "12": "rum%20runner",
+  "16": "daiquiri",
+  "35": "strawberry%20margarita",
+  "80": "tom%20collins",
+  "99": "french%2075",
+  "18": "dirty%20martini",
+  "10751": "banana%20milk%20shake",
+  "14": "mimosa",
+  "36": "irish%20coffee",
+  "27": "bloody%20mary",
+  "10402": "cuba%20libre",
+  "9648": "dark%20and%20stormy",
+  "10749": "cosmopolitan",
+  "878": "sex%20on%20the%20beach",
+  "10770": "sea%20breeze",
+  "53": "salty%20dog",
+  "10752": "white%20russian",
+  "37": "old%20fashioned"
 }
