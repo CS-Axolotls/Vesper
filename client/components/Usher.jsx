@@ -6,14 +6,15 @@ const Usher = () => {
   // Add movies array to state object
   const [movies, setMovies] = useState([]);
 
-  // Whenever Usher component mounts/updates
+  // Invoked whenever Usher component mounts/updates
   useEffect(() => {
     let isMounted = true;
-    //
+    // Make GET request to server at endpoint /api for list of popular movies
     fetch('/api')
       .then((data) => data.json())
       .then((updatedData) => {
         if (isMounted) {
+          // Update the movies array in state to retrieved data
           setMovies(updatedData);
         }
       })
@@ -35,8 +36,8 @@ const Usher = () => {
   }
   return (
     <div className="usher">
+      <h1 id="title">V E S P E R</h1>
       {movieCards}
-      {/* <Bartender></Bartender> */}
     </div>
   );
 };
