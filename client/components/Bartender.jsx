@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Bartender = () => {
-  return <div>Bartender Comp</div>;
+const Bartender = (props) => {
+  return <div>{props.genres}</div>;
 };
 export default Bartender;
