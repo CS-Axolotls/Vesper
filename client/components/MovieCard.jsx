@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import Bartender from './Bartender.jsx';
 
 const MovieCard = (props) => {
+  const [seen, toggleSeen] = useState(false);
+
+  const popupClick = () => {
+    toggleSeen(!seen);
+  };
+
   const movie = props.movie;
   const url = 'https://image.tmdb.org/t/p/original';
   return (
-    <div>
+    <div className="movie-card">
       <Popup
         trigger={
-          <button className="movie-card">
+          <button className="movie-btn">
             {' '}
             <img className="movieposter" src={url + movie.poster_path}></img>
           </button>
@@ -18,6 +24,11 @@ const MovieCard = (props) => {
       >
         <Bartender genres={movie.genre_ids}></Bartender>
       </Popup>
+
+      {/* <div className="btn" onClick={popupClick}>
+        <button>New User?</button>
+      </div>
+      {seen ? <PopUp toggle={popupClick} /> : null} */}
     </div>
   );
 };

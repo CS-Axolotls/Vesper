@@ -3,7 +3,11 @@ import Usher from './components/Usher.jsx';
 
 class App extends React.Component {
   render() {
-    return <Usher></Usher>;
+    return (
+      <div>
+        <Usher></Usher>
+      </div>
+    );
   }
 }
 
