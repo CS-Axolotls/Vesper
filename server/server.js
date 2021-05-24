@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 const apiRouter = require('./routes/api');
-
+// const drinkRouter = require('./routes/drink');
 const PORT = 3000;
 
 /**
@@ -17,6 +17,9 @@ app.use(express.json());
  * define route handlers
  */
 app.use('/api', apiRouter);
+//app.use('/', apiRouter); // Directs straight to the api router
+
+// app.use('/drink', drinkRouter); // Uncomment if we are going to use drink api
 
 // catch-all route handler for any requests to an unknown route
 app.use((req, res) => res.status(404).send('This is not the page you\'re looking for...'));
