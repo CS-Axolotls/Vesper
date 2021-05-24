@@ -5,6 +5,12 @@ import MovieCard from './MovieCard.jsx';
 const Usher = () => {
   // Add movies array to state object
   const [movies, setMovies] = useState([]);
+  const [drink, setDrink] = useState({});
+
+  function openDrink(newDrink) {
+    setDrink(newDrink);
+    console.log(drink);
+  }
 
   // Invoked whenever Usher component mounts/updates
   useEffect(() => {
@@ -32,14 +38,11 @@ const Usher = () => {
   const movieCards = [];
 
   for (let i = 0; i < movies.length; i++) {
-    movieCards.push(<MovieCard movie={movies[i]}></MovieCard>);
+    movieCards.push(
+      <MovieCard movie={movies[i]} openDrink={openDrink}></MovieCard>
+    );
   }
-  return (
-    <div className="usher">
-      <h1 id="title">V E S P E R</h1>
-      {movieCards}
-    </div>
-  );
+  return <div className="usher">{movieCards}</div>;
 };
 
 export default Usher;

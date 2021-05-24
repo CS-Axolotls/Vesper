@@ -13,7 +13,7 @@ const MovieCard = (props) => {
   const url = 'https://image.tmdb.org/t/p/original';
   return (
     <div className="movie-card">
-      <Popup
+      {/* <Popup
         trigger={
           <button className="movie-btn">
             {' '}
@@ -23,12 +23,18 @@ const MovieCard = (props) => {
         position="right center"
       >
         <Bartender genres={movie.genre_ids}></Bartender>
-      </Popup>
+      </Popup> */}
 
-      {/* <div className="btn" onClick={popupClick}>
-        <button>New User?</button>
+      <div className="movie-btn" onClick={popupClick}>
+        <img className="movieposter" src={url + movie.poster_path}></img>
       </div>
-      {seen ? <PopUp toggle={popupClick} /> : null} */}
+      {seen ? (
+        <Bartender
+          genres={movie.genre_ids}
+          popupClick={popupClick}
+          openDrink={props.openDrink}
+        />
+      ) : null}
     </div>
   );
 };
