@@ -20,8 +20,9 @@ p {
 }
 
 .usher {
-  max-width: 85em;
+  max-width: 80em;
   margin: 0 auto;
+  padding: 0;
 }
 
 .movie-card {
