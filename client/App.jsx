@@ -6,7 +6,6 @@ class App extends React.Component {
     return (
       <div>
         <h1 id="title">V E S P E R</h1>
-
         <Usher></Usher>
       </div>
     );

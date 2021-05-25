@@ -3,6 +3,7 @@ const fetch = require('node-fetch');
 const genreDrinks = require('../data/genreDrinks.json');
 const cocktailController = {};
 
+// Fetch request for random drink
 cocktailController.getRandomDrink = (req, res, next) => {
   const url = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
   fetch(url)
@@ -21,9 +22,9 @@ cocktailController.getSpecificDrink = (req, res, next) => {
   // We also have to pay attention to the body parser
 
   const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${
-    genreDrinks[req.query.genre]
+    genreDrinks[req.query.genre] // Adds the genre number from the request to the end of the url
   }`; // The request should look something like this: localhost:3000/api/specificDrink?genre=number
-  //   console.log('supposed to be correct drink' + genreDrinks[req.query.genre]);
+
   fetch(url)
     .then((data) => data.json())
     .then((updatedData) => {
